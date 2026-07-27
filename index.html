@@ -843,7 +843,7 @@ async function loadSiteContent(){
     document.getElementById('heroBtn1').textContent = d.hero.button_primary;
     document.getElementById('heroBtn2').textContent = d.hero.button_secondary;
     document.getElementById('heroTrustText').textContent = d.hero.trust_text;
-    document.getElementById('heroImage').src = d.hero.hero_image;
+    const isMobile = window.innerWidth <= 520; document.getElementById('heroImage').src = isMobile ? (d.hero.hero_image_mobile || d.hero.hero_image_desktop) : d.hero.hero_image_desktop;
     document.getElementById('heroStatRevenue').dataset.target = d.hero.stat_revenue;
     document.getElementById('heroStatConversion').dataset.target = d.hero.stat_conversion;
 
