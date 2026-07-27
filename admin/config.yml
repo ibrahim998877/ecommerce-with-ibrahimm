@@ -46,7 +46,7 @@ collections:
               - { label: "Button 1 Text", name: "button_primary", widget: "string" }
               - { label: "Button 2 Text", name: "button_secondary", widget: "string" }
               - { label: "Trust Line", name: "trust_text", widget: "string" }
-              - { label: "Hero Image", name: "hero_image", widget: "image" }
+              - { label: "Hero Image - Desktop", name: "hero_image_desktop", widget: "image" }               - { label: "Hero Image - Mobile", name: "hero_image_mobile", widget: "image" }
               - { label: "Revenue Stat Number", name: "stat_revenue", widget: "number" }
               - { label: "Conversion Rate Stat", name: "stat_conversion", widget: "number" }
 
