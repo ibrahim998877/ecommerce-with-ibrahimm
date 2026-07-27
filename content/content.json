@@ -7,6 +7,93 @@
     "email": "info.buzznetic@gmail.com",
     "copyright": "© 2026 Ecommerce With Ibrahim. All Rights Reserved."
   },
+  "portfolio": [
+    {
+      "url_label": "luxefashionco.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-fashion-store/600/500",
+      "tag": "Fashion & Apparel",
+      "title": "Luxe Fashion Co.",
+      "desc": "Premium theme, custom branding & full store build."
+    },
+    {
+      "url_label": "aurajewels.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-jewelry-store/600/500",
+      "tag": "Jewelry",
+      "title": "Aura Jewels",
+      "desc": "Elegant redesign with conversion-focused product pages."
+    },
+    {
+      "url_label": "glowbeauty.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-beauty-store/600/500",
+      "tag": "Beauty & Skincare",
+      "title": "Glow Beauty",
+      "desc": "Full store build with ad account & pixel setup."
+    },
+    {
+      "url_label": "nextgengadgets.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-electronics-store/600/500",
+      "tag": "Electronics",
+      "title": "NextGen Gadgets",
+      "desc": "High-speed store with Meta & TikTok ad integration."
+    },
+    {
+      "url_label": "peakfitwear.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-fitness-store/600/500",
+      "tag": "Fitness Apparel",
+      "title": "Peak Fitwear",
+      "desc": "Bold branded store with Snapchat ads management."
+    },
+    {
+      "url_label": "nordichome.myshopify.com",
+      "image": "https://picsum.photos/seed/pf-furniture-store/600/500",
+      "tag": "Home & Furniture",
+      "title": "Nordic Home",
+      "desc": "Complete store development with Google Merchant setup."
+    }
+  ],
+  "packages": [
+    {
+      "tier": "Starter",
+      "name": "Starter Package",
+      "featured": false,
+      "desc": "Perfect for launching a clean, professional Shopify store from scratch.",
+      "features": [
+        "Shopify Store Design",
+        "Premium Theme Setup",
+        "Basic Pages (Home, About, Contact)",
+        "Mobile Responsive Design"
+      ]
+    },
+    {
+      "tier": "Professional",
+      "name": "Professional Package",
+      "featured": true,
+      "desc": "A complete, ready-to-sell store with everything set up correctly.",
+      "features": [
+        "Premium Shopify Store",
+        "Product Upload & Optimization",
+        "Premium Theme",
+        "Payment Gateway Setup",
+        "Essential Apps Installed",
+        "Speed Optimization"
+      ]
+    },
+    {
+      "tier": "Business Growth",
+      "name": "Business Growth Package",
+      "featured": false,
+      "desc": "Store, branding and full ad setup — everything you need to scale.",
+      "features": [
+        "Complete Shopify Store",
+        "Branding",
+        "Facebook Ads Setup",
+        "TikTok Ads Setup",
+        "Snapchat Ads Setup",
+        "Pixel Setup & Conversion Tracking",
+        "Premium Support"
+      ]
+    }
+  ],
   "social": {
     "facebook": "#",
     "instagram": "#",
@@ -14,97 +101,203 @@
     "linkedin": "#",
     "whatsapp": "https://wa.me/923136831823"
   },
-  "hero": {
-    "eyebrow": "Shopify & Ecommerce Growth Experts",
-    "headline_normal": "Build Your ",
-    "headline_gold": "Profitable",
-    "headline_end": " Shopify Store with Ecommerce With Ibrahim",
-    "subheading": "Professional Shopify store design, Facebook Ads, TikTok Ads, Snapchat Ads & complete ecommerce solutions — built to convert visitors into loyal customers.",
-    "button_primary": "Get Started",
-    "button_secondary": "View Portfolio",
-    "trust_text": "Trusted by 200+ Shopify brands worldwide",
-    "hero_image": "https://picsum.photos/seed/shopify-hero-dashboard/900/600",
-    "stat_revenue": "48200",
-    "stat_conversion": "4.8"
-  },
   "about": {
-    "eyebrow": "About Us",
-    "heading_normal": "The Shopify Partner Behind ",
-    "heading_gold": "Profitable",
-    "heading_end": " Online Stores",
     "paragraph_1": "Ecommerce With Ibrahim is a dedicated Shopify and ecommerce growth agency helping brands launch, redesign and scale premium online stores. From pixel-perfect store design to full-funnel advertising, every project is built to turn visitors into paying customers.",
+    "stat_3_number": "98",
+    "stat_2_number": "850",
     "paragraph_2": "We combine conversion-focused design with data-driven advertising on Facebook, TikTok, Snapchat and Google — giving your brand a complete, done-for-you ecommerce system rather than just a website.",
-    "image": "https://picsum.photos/seed/ibrahim-workspace-analytics/700/900",
+    "stat_1_number": "200",
+    "heading_normal": "The Shopify Partner Behind ",
     "badge_number": "5+",
+    "stat_4_suffix": "/7",
+    "stat_3_suffix": "%",
+    "stat_2_suffix": "K+",
+    "eyebrow": "About Us",
+    "stat_1_suffix": "+",
+    "stat_2_prefix": "$",
     "badge_label": "Years of Shopify Experience",
-    "stat_1_number": "200", "stat_1_suffix": "+", "stat_1_label": "Stores Launched",
-    "stat_2_number": "850", "stat_2_prefix": "$", "stat_2_suffix": "K+", "stat_2_label": "Ad Spend Managed",
-    "stat_3_number": "98", "stat_3_suffix": "%", "stat_3_label": "Client Satisfaction",
-    "stat_4_number": "24", "stat_4_suffix": "/7", "stat_4_label": "Dedicated Support"
+    "image": "https://picsum.photos/seed/ibrahim-workspace-analytics/700/900",
+    "stat_1_label": "Stores Launched",
+    "stat_2_label": "Ad Spend Managed",
+    "heading_gold": "Profitable",
+    "stat_3_label": "Client Satisfaction",
+    "stat_4_label": "Dedicated Support",
+    "heading_end": " Online Stores",
+    "stat_4_number": "24"
   },
-  "services": [
-    {"icon": "fa-solid fa-store", "title": "Shopify Store Design", "desc": "Custom, conversion-focused Shopify stores designed to reflect your brand and turn browsers into buyers."},
-    {"icon": "fa-solid fa-paintbrush", "title": "Shopify Store Redesign", "desc": "Give your existing store a premium visual and functional upgrade without losing your data or SEO rankings."},
-    {"icon": "fa-solid fa-swatchbook", "title": "Premium Theme Setup", "desc": "Professional premium Shopify theme installation, customization and optimization for a luxury storefront feel."},
-    {"icon": "fa-solid fa-code", "title": "Complete Store Development", "desc": "End-to-end Shopify store development — from setup to launch, fully configured and ready to sell."},
-    {"icon": "fa-solid fa-magnifying-glass-chart", "title": "Winning Product Research", "desc": "Data-backed research to find high-demand, high-margin products with real winning potential."},
-    {"icon": "fa-solid fa-box-open", "title": "Product Upload & Optimization", "desc": "SEO-optimized product listings with compelling copy, images and pricing structured to convert."},
-    {"icon": "fa-brands fa-facebook", "title": "Facebook Ads Account Setup", "desc": "Professional Meta Business & Ads Manager setup configured correctly from day one."},
-    {"icon": "fa-brands fa-tiktok", "title": "TikTok Ads Account Setup", "desc": "TikTok Ads Manager setup and configuration to get your store advertising-ready on TikTok."},
-    {"icon": "fa-brands fa-snapchat", "title": "Snapchat Ads Account Setup", "desc": "Complete Snapchat Ads account setup to unlock another high-converting traffic channel."},
-    {"icon": "fa-brands fa-google", "title": "Google Merchant Setup", "desc": "Google Merchant Center configuration so your products can appear across Google Shopping."},
-    {"icon": "fa-solid fa-satellite-dish", "title": "Pixel & Conversion API Setup", "desc": "Accurate pixel and Conversion API implementation for reliable tracking and better ad performance."},
-    {"icon": "fa-solid fa-bullseye", "title": "Facebook Ads Management", "desc": "Ongoing campaign creation, testing and optimization to scale your Facebook ad performance."},
-    {"icon": "fa-solid fa-chart-simple", "title": "TikTok Ads Management", "desc": "Creative-led TikTok campaigns managed and optimized for consistent, profitable scaling."},
-    {"icon": "fa-solid fa-ghost", "title": "Snapchat Ads Management", "desc": "Full Snapchat campaign management to expand your reach and lower acquisition costs."},
-    {"icon": "fa-solid fa-comments", "title": "Ecommerce Consultation", "desc": "One-on-one strategy sessions to diagnose issues and build a clear roadmap for growth."}
-  ],
-  "packages": [
+  "why_choose": [
     {
-      "tier": "Starter", "name": "Starter Package", "featured": false,
-      "desc": "Perfect for launching a clean, professional Shopify store from scratch.",
-      "features": ["Shopify Store Design", "Premium Theme Setup", "Basic Pages (Home, About, Contact)", "Mobile Responsive Design"]
+      "icon": "fa-solid fa-user-graduate",
+      "title": "Professional Shopify Expert",
+      "desc": "Certified skills backed by real store launches and results."
     },
     {
-      "tier": "Professional", "name": "Professional Package", "featured": true,
-      "desc": "A complete, ready-to-sell store with everything set up correctly.",
-      "features": ["Premium Shopify Store", "Product Upload & Optimization", "Premium Theme", "Payment Gateway Setup", "Essential Apps Installed", "Speed Optimization"]
+      "icon": "fa-solid fa-bolt",
+      "title": "Fast Delivery",
+      "desc": "Clear timelines and on-time delivery for every project."
     },
     {
-      "tier": "Business Growth", "name": "Business Growth Package", "featured": false,
-      "desc": "Store, branding and full ad setup — everything you need to scale.",
-      "features": ["Complete Shopify Store", "Branding", "Facebook Ads Setup", "TikTok Ads Setup", "Snapchat Ads Setup", "Pixel Setup & Conversion Tracking", "Premium Support"]
+      "icon": "fa-solid fa-gem",
+      "title": "High Quality Work",
+      "desc": "Pixel-perfect design with meticulous attention to detail."
+    },
+    {
+      "icon": "fa-solid fa-mobile-screen",
+      "title": "Mobile Responsive Design",
+      "desc": "Every store looks and performs flawlessly on any device."
+    },
+    {
+      "icon": "fa-solid fa-magnifying-glass",
+      "title": "SEO Friendly",
+      "desc": "Built with search visibility and organic growth in mind."
+    },
+    {
+      "icon": "fa-solid fa-headset",
+      "title": "24/7 Support",
+      "desc": "Always available whenever you need help or updates."
+    },
+    {
+      "icon": "fa-solid fa-sack-dollar",
+      "title": "Affordable Pricing",
+      "desc": "Premium quality delivered at packages that fit your budget."
+    },
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "Trusted Service",
+      "desc": "A proven track record with brands across multiple industries."
     }
   ],
-  "why_choose": [
-    {"icon": "fa-solid fa-user-graduate", "title": "Professional Shopify Expert", "desc": "Certified skills backed by real store launches and results."},
-    {"icon": "fa-solid fa-bolt", "title": "Fast Delivery", "desc": "Clear timelines and on-time delivery for every project."},
-    {"icon": "fa-solid fa-gem", "title": "High Quality Work", "desc": "Pixel-perfect design with meticulous attention to detail."},
-    {"icon": "fa-solid fa-mobile-screen", "title": "Mobile Responsive Design", "desc": "Every store looks and performs flawlessly on any device."},
-    {"icon": "fa-solid fa-magnifying-glass", "title": "SEO Friendly", "desc": "Built with search visibility and organic growth in mind."},
-    {"icon": "fa-solid fa-headset", "title": "24/7 Support", "desc": "Always available whenever you need help or updates."},
-    {"icon": "fa-solid fa-sack-dollar", "title": "Affordable Pricing", "desc": "Premium quality delivered at packages that fit your budget."},
-    {"icon": "fa-solid fa-shield-halved", "title": "Trusted Service", "desc": "A proven track record with brands across multiple industries."}
-  ],
-  "portfolio": [
-    {"url_label": "luxefashionco.myshopify.com", "image": "https://picsum.photos/seed/pf-fashion-store/600/500", "tag": "Fashion & Apparel", "title": "Luxe Fashion Co.", "desc": "Premium theme, custom branding & full store build."},
-    {"url_label": "aurajewels.myshopify.com", "image": "https://picsum.photos/seed/pf-jewelry-store/600/500", "tag": "Jewelry", "title": "Aura Jewels", "desc": "Elegant redesign with conversion-focused product pages."},
-    {"url_label": "glowbeauty.myshopify.com", "image": "https://picsum.photos/seed/pf-beauty-store/600/500", "tag": "Beauty & Skincare", "title": "Glow Beauty", "desc": "Full store build with ad account & pixel setup."},
-    {"url_label": "nextgengadgets.myshopify.com", "image": "https://picsum.photos/seed/pf-electronics-store/600/500", "tag": "Electronics", "title": "NextGen Gadgets", "desc": "High-speed store with Meta & TikTok ad integration."},
-    {"url_label": "peakfitwear.myshopify.com", "image": "https://picsum.photos/seed/pf-fitness-store/600/500", "tag": "Fitness Apparel", "title": "Peak Fitwear", "desc": "Bold branded store with Snapchat ads management."},
-    {"url_label": "nordichome.myshopify.com", "image": "https://picsum.photos/seed/pf-furniture-store/600/500", "tag": "Home & Furniture", "title": "Nordic Home", "desc": "Complete store development with Google Merchant setup."}
-  ],
   "testimonials": [
-    {"name": "Ahmed Raza", "role": "Founder, Luxe Fashion Co.", "rating": 5, "text": "Ibrahim redesigned our entire store and sales jumped within the first two weeks. The attention to detail was incredible."},
-    {"name": "Sarah Mitchell", "role": "Owner, Glow Beauty", "rating": 5, "text": "The Facebook and TikTok ad setup was flawless. Our conversion tracking finally works exactly the way it should."},
-    {"name": "Hassan Ali", "role": "CEO, NextGen Gadgets", "rating": 5, "text": "Professional, fast and genuinely cares about results. Our store looks premium and finally converts like one."},
-    {"name": "Emily Johnson", "role": "Marketing Lead, Nordic Home", "rating": 5, "text": "From product research to store launch, everything was handled with real expertise. Highly recommend the Business Growth package."},
-    {"name": "Omar Farooq", "role": "Founder, Peak Fitwear", "rating": 5, "text": "Our Snapchat and TikTok campaigns finally have proper pixel tracking. Ad spend is far more efficient now."},
-    {"name": "Maria Gonzalez", "role": "Director, Aura Jewels", "rating": 5, "text": "Excellent communication and premium quality work. Our new theme setup gave the store a complete luxury feel."}
+    {
+      "name": "Ahmed Raza",
+      "role": "Founder, Luxe Fashion Co.",
+      "rating": 5,
+      "text": "Ibrahim redesigned our entire store and sales jumped within the first two weeks. The attention to detail was incredible."
+    },
+    {
+      "name": "Sarah Mitchell",
+      "role": "Owner, Glow Beauty",
+      "rating": 5,
+      "text": "The Facebook and TikTok ad setup was flawless. Our conversion tracking finally works exactly the way it should."
+    },
+    {
+      "name": "Hassan Ali",
+      "role": "CEO, NextGen Gadgets",
+      "rating": 5,
+      "text": "Professional, fast and genuinely cares about results. Our store looks premium and finally converts like one."
+    },
+    {
+      "name": "Emily Johnson",
+      "role": "Marketing Lead, Nordic Home",
+      "rating": 5,
+      "text": "From product research to store launch, everything was handled with real expertise. Highly recommend the Business Growth package."
+    },
+    {
+      "name": "Omar Farooq",
+      "role": "Founder, Peak Fitwear",
+      "rating": 5,
+      "text": "Our Snapchat and TikTok campaigns finally have proper pixel tracking. Ad spend is far more efficient now."
+    },
+    {
+      "name": "Maria Gonzalez",
+      "role": "Director, Aura Jewels",
+      "rating": 5,
+      "text": "Excellent communication and premium quality work. Our new theme setup gave the store a complete luxury feel."
+    }
   ],
+  "hero": {
+    "stat_conversion": "4.8",
+    "subheading": "Professional Shopify store design, Facebook Ads, TikTok Ads, Snapchat Ads & complete ecommerce solutions — built to convert visitors into loyal customers.",
+    "button_secondary": "View Portfolio",
+    "eyebrow": "Shopify & Ecommerce Growth Experts",
+    "headline_gold": "Profitable",
+    "headline_end": " Shopify Store with Ecommerce With Ibrahim",
+    "stat_revenue": "48200",
+    "headline_normal": "Build Your ",
+    "trust_text": "Trusted by 200+ Shopify brands worldwide",
+    "button_primary": "Get Started",
+    "hero_image": "/assets/whatsapp-image-2026-07-28-at-12.47.48-am.jpeg"
+  },
   "cta_banner": {
     "heading_normal": "Ready to build a ",
     "heading_gold": "profitable Shopify store",
     "heading_end": " that actually converts?"
-  }
+  },
+  "services": [
+    {
+      "icon": "fa-solid fa-store",
+      "title": "Shopify Store Design",
+      "desc": "Custom, conversion-focused Shopify stores designed to reflect your brand and turn browsers into buyers."
+    },
+    {
+      "icon": "fa-solid fa-paintbrush",
+      "title": "Shopify Store Redesign",
+      "desc": "Give your existing store a premium visual and functional upgrade without losing your data or SEO rankings."
+    },
+    {
+      "icon": "fa-solid fa-swatchbook",
+      "title": "Premium Theme Setup",
+      "desc": "Professional premium Shopify theme installation, customization and optimization for a luxury storefront feel."
+    },
+    {
+      "icon": "fa-solid fa-code",
+      "title": "Complete Store Development",
+      "desc": "End-to-end Shopify store development — from setup to launch, fully configured and ready to sell."
+    },
+    {
+      "icon": "fa-solid fa-magnifying-glass-chart",
+      "title": "Winning Product Research",
+      "desc": "Data-backed research to find high-demand, high-margin products with real winning potential."
+    },
+    {
+      "icon": "fa-solid fa-box-open",
+      "title": "Product Upload & Optimization",
+      "desc": "SEO-optimized product listings with compelling copy, images and pricing structured to convert."
+    },
+    {
+      "icon": "fa-brands fa-facebook",
+      "title": "Facebook Ads Account Setup",
+      "desc": "Professional Meta Business & Ads Manager setup configured correctly from day one."
+    },
+    {
+      "icon": "fa-brands fa-tiktok",
+      "title": "TikTok Ads Account Setup",
+      "desc": "TikTok Ads Manager setup and configuration to get your store advertising-ready on TikTok."
+    },
+    {
+      "icon": "fa-brands fa-snapchat",
+      "title": "Snapchat Ads Account Setup",
+      "desc": "Complete Snapchat Ads account setup to unlock another high-converting traffic channel."
+    },
+    {
+      "icon": "fa-brands fa-google",
+      "title": "Google Merchant Setup",
+      "desc": "Google Merchant Center configuration so your products can appear across Google Shopping."
+    },
+    {
+      "icon": "fa-solid fa-satellite-dish",
+      "title": "Pixel & Conversion API Setup",
+      "desc": "Accurate pixel and Conversion API implementation for reliable tracking and better ad performance."
+    },
+    {
+      "icon": "fa-solid fa-bullseye",
+      "title": "Facebook Ads Management",
+      "desc": "Ongoing campaign creation, testing and optimization to scale your Facebook ad performance."
+    },
+    {
+      "icon": "fa-solid fa-chart-simple",
+      "title": "TikTok Ads Management",
+      "desc": "Creative-led TikTok campaigns managed and optimized for consistent, profitable scaling."
+    },
+    {
+      "icon": "fa-solid fa-ghost",
+      "title": "Snapchat Ads Management",
+      "desc": "Full Snapchat campaign management to expand your reach and lower acquisition costs."
+    },
+    {
+      "icon": "fa-solid fa-comments",
+      "title": "Ecommerce Consultation",
+      "desc": "One-on-one strategy sessions to diagnose issues and build a clear roadmap for growth."
+    }
+  ]
 }
