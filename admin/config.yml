@@ -34,7 +34,7 @@ collections:
               - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
               - { label: "WhatsApp Link (https://wa.me/...)", name: "whatsapp", widget: "string" }
 
-         - label: "3. Hero Section (Top of Page)"
+          - label: "3. Hero Section (Top of Page)"
             name: "hero"
             widget: "object"
             fields:
