@@ -2,134 +2,140 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
-
-locale: "en"
+media_folder: "assets"
+public_folder: "/assets"
 
 collections:
-  - name: "site_content"
-    label: "🌐 Website Content"
+  - name: "content"
+    label: "🏠 Website Content"
     files:
-
-      - name: "general"
-        label: "1. Site Info, Logo & Social Links"
-        file: "content/content.json"
+      - file: "content/content.json"
+        label: "Edit Full Website"
+        name: "website"
         fields:
-          - { label: "Site Settings", name: "site", widget: "object", fields: [
-              { label: "Logo Text (Part 1)", name: "logo_text_1", widget: "string" },
-              { label: "Logo Text (Part 2 / Bold)", name: "logo_text_2", widget: "string" },
-              { label: "Logo Small Tagline", name: "logo_tagline", widget: "string" },
-              { label: "Phone Number", name: "phone", widget: "string" },
-              { label: "Email Address", name: "email", widget: "string" },
-              { label: "Footer Copyright Text", name: "copyright", widget: "string" },
-            ]}
-          - { label: "Social Links", name: "social", widget: "object", fields: [
-              { label: "Facebook URL", name: "facebook", widget: "string" },
-              { label: "Instagram URL", name: "instagram", widget: "string" },
-              { label: "TikTok URL", name: "tiktok", widget: "string" },
-              { label: "LinkedIn URL", name: "linkedin", widget: "string" },
-              { label: "WhatsApp Link", name: "whatsapp", widget: "string" },
-            ]}
-          - { label: "Hero Section", name: "hero", widget: "object", fields: [
-              { label: "Small Label (Eyebrow)", name: "eyebrow", widget: "string" },
-              { label: "Headline - Start Text", name: "headline_normal", widget: "string" },
-              { label: "Headline - Gold Highlighted Word", name: "headline_gold", widget: "string" },
-              { label: "Headline - End Text", name: "headline_end", widget: "string" },
-              { label: "Sub Heading", name: "subheading", widget: "text" },
-              { label: "Primary Button Text", name: "button_primary", widget: "string" },
-              { label: "Secondary Button Text", name: "button_secondary", widget: "string" },
-              { label: "Trust Line Text", name: "trust_text", widget: "string" },
-              { label: "Hero Image", name: "hero_image", widget: "image" },
-              { label: "Revenue Stat Number", name: "stat_revenue", widget: "string" },
-              { label: "Conversion Rate Stat", name: "stat_conversion", widget: "string" },
-            ]}
-          - { label: "CTA Banner", name: "cta_banner", widget: "object", fields: [
-              { label: "Start Text", name: "heading_normal", widget: "string" },
-              { label: "Gold Highlighted Text", name: "heading_gold", widget: "string" },
-              { label: "End Text", name: "heading_end", widget: "string" },
-            ]}
+          - label: "1. Site / Logo / Contact"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Logo Text (Part 1)", name: "logo_text_1", widget: "string" }
+              - { label: "Logo Text (Part 2, bold gold)", name: "logo_text_2", widget: "string" }
+              - { label: "Logo Tagline", name: "logo_tagline", widget: "string" }
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Footer Copyright Text", name: "copyright", widget: "string" }
 
-      - name: "about"
-        label: "2. About Section"
-        file: "content/content.json"
-        fields:
-          - { label: "About", name: "about", widget: "object", fields: [
-              { label: "Small Label (Eyebrow)", name: "eyebrow", widget: "string" },
-              { label: "Heading - Start Text", name: "heading_normal", widget: "string" },
-              { label: "Heading - Gold Highlighted Word", name: "heading_gold", widget: "string" },
-              { label: "Heading - End Text", name: "heading_end", widget: "string" },
-              { label: "Paragraph 1", name: "paragraph_1", widget: "text" },
-              { label: "Paragraph 2", name: "paragraph_2", widget: "text" },
-              { label: "About Image", name: "image", widget: "image" },
-              { label: "Badge Number (e.g. 5+)", name: "badge_number", widget: "string" },
-              { label: "Badge Label", name: "badge_label", widget: "string" },
-              { label: "Stat 1 Number", name: "stat_1_number", widget: "string" },
-              { label: "Stat 1 Suffix", name: "stat_1_suffix", widget: "string", required: false },
-              { label: "Stat 1 Label", name: "stat_1_label", widget: "string" },
-              { label: "Stat 2 Prefix", name: "stat_2_prefix", widget: "string", required: false },
-              { label: "Stat 2 Number", name: "stat_2_number", widget: "string" },
-              { label: "Stat 2 Suffix", name: "stat_2_suffix", widget: "string", required: false },
-              { label: "Stat 2 Label", name: "stat_2_label", widget: "string" },
-              { label: "Stat 3 Number", name: "stat_3_number", widget: "string" },
-              { label: "Stat 3 Suffix", name: "stat_3_suffix", widget: "string", required: false },
-              { label: "Stat 3 Label", name: "stat_3_label", widget: "string" },
-              { label: "Stat 4 Number", name: "stat_4_number", widget: "string" },
-              { label: "Stat 4 Suffix", name: "stat_4_suffix", widget: "string", required: false },
-              { label: "Stat 4 Label", name: "stat_4_label", widget: "string" },
-            ]}
+          - label: "2. Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "TikTok URL", name: "tiktok", widget: "string", required: false }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+              - { label: "WhatsApp Link (https://wa.me/...)", name: "whatsapp", widget: "string" }
 
-      - name: "services"
-        label: "3. Services (Add / Edit / Remove)"
-        file: "content/content.json"
-        fields:
-          - { label: "Services", name: "services", widget: "list", fields: [
-              { label: "Icon (Font Awesome class, e.g. fa-solid fa-store)", name: "icon", widget: "string" },
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "desc", widget: "text" },
-            ]}
+          - label: "3. Hero Section (Top of Page)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Small Tag Above Title", name: "eyebrow", widget: "string" }
+              - { label: "Title - Part 1 (normal)", name: "headline_normal", widget: "string" }
+              - { label: "Title - Part 2 (gold highlight)", name: "headline_gold", widget: "string" }
+              - { label: "Title - Part 3 (normal, after gold)", name: "headline_end", widget: "string" }
+              - { label: "Subheading Text", name: "subheading", widget: "text" }
+              - { label: "Button 1 Text", name: "button_primary", widget: "string" }
+              - { label: "Button 2 Text", name: "button_secondary", widget: "string" }
+              - { label: "Trust Line", name: "trust_text", widget: "string" }
+              - { label: "Hero Image", name: "hero_image", widget: "image" }
+              - { label: "Revenue Stat Number", name: "stat_revenue", widget: "number" }
+              - { label: "Conversion Rate Stat", name: "stat_conversion", widget: "number" }
 
-      - name: "packages"
-        label: "4. Pricing Packages"
-        file: "content/content.json"
-        fields:
-          - { label: "Packages", name: "packages", widget: "list", fields: [
-              { label: "Tier Label", name: "tier", widget: "string" },
-              { label: "Package Name", name: "name", widget: "string" },
-              { label: "Highlight as 'Most Popular'?", name: "featured", widget: "boolean", default: false },
-              { label: "Description", name: "desc", widget: "text" },
-              { label: "Features (one per line)", name: "features", widget: "list", field: { label: "Feature", name: "item", widget: "string" } },
-            ]}
+          - label: "4. About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading - Part 1", name: "heading_normal", widget: "string" }
+              - { label: "Heading - Part 2 (gold)", name: "heading_gold", widget: "string" }
+              - { label: "Heading - Part 3", name: "heading_end", widget: "string" }
+              - { label: "Paragraph 1", name: "paragraph_1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph_2", widget: "text" }
+              - { label: "About Image", name: "image", widget: "image" }
+              - { label: "Badge Number (e.g. 5+)", name: "badge_number", widget: "string" }
+              - { label: "Badge Label", name: "badge_label", widget: "string" }
+              - { label: "Stat 1 Number", name: "stat_1_number", widget: "number" }
+              - { label: "Stat 1 Prefix", name: "stat_1_prefix", widget: "string", required: false }
+              - { label: "Stat 1 Suffix", name: "stat_1_suffix", widget: "string", required: false }
+              - { label: "Stat 1 Label", name: "stat_1_label", widget: "string" }
+              - { label: "Stat 2 Number", name: "stat_2_number", widget: "number" }
+              - { label: "Stat 2 Prefix", name: "stat_2_prefix", widget: "string", required: false }
+              - { label: "Stat 2 Suffix", name: "stat_2_suffix", widget: "string", required: false }
+              - { label: "Stat 2 Label", name: "stat_2_label", widget: "string" }
+              - { label: "Stat 3 Number", name: "stat_3_number", widget: "number" }
+              - { label: "Stat 3 Prefix", name: "stat_3_prefix", widget: "string", required: false }
+              - { label: "Stat 3 Suffix", name: "stat_3_suffix", widget: "string", required: false }
+              - { label: "Stat 3 Label", name: "stat_3_label", widget: "string" }
+              - { label: "Stat 4 Number", name: "stat_4_number", widget: "number" }
+              - { label: "Stat 4 Prefix", name: "stat_4_prefix", widget: "string", required: false }
+              - { label: "Stat 4 Suffix", name: "stat_4_suffix", widget: "string", required: false }
+              - { label: "Stat 4 Label", name: "stat_4_label", widget: "string" }
 
-      - name: "why_choose"
-        label: "5. Why Choose Us"
-        file: "content/content.json"
-        fields:
-          - { label: "Why Choose Us Items", name: "why_choose", widget: "list", fields: [
-              { label: "Icon (Font Awesome class)", name: "icon", widget: "string" },
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "desc", widget: "text" },
-            ]}
+          - label: "5. Services (Add / Remove / Edit)"
+            name: "services"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Icon (Font Awesome class)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
 
-      - name: "portfolio"
-        label: "6. Portfolio / Store Showcase"
-        file: "content/content.json"
-        fields:
-          - { label: "Portfolio Items", name: "portfolio", widget: "list", fields: [
-              { label: "Store URL Label (e.g. mystore.myshopify.com)", name: "url_label", widget: "string" },
-              { label: "Image", name: "image", widget: "image" },
-              { label: "Category Tag", name: "tag", widget: "string" },
-              { label: "Store Title", name: "title", widget: "string" },
-              { label: "Description", name: "desc", widget: "text" },
-            ]}
+          - label: "6. Pricing Packages (Add / Remove / Edit)"
+            name: "packages"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Featured / Most Popular?", name: "featured", widget: "boolean", default: false }
+              - { label: "Tier Label", name: "tier", widget: "string" }
+              - { label: "Package Name", name: "name", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - label: "Features List"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
 
-      - name: "testimonials"
-        label: "7. Client Testimonials"
-        file: "content/content.json"
-        fields:
-          - { label: "Testimonials", name: "testimonials", widget: "list", fields: [
-              { label: "Client Name", name: "name", widget: "string" },
-              { label: "Role / Company", name: "role", widget: "string" },
-              { label: "Rating (1-5)", name: "rating", widget: "number", default: 5, min: 1, max: 5 },
-              { label: "Review Text", name: "text", widget: "text" },
-            ]}
+          - label: "7. Why Choose Us (Add / Remove / Edit)"
+            name: "why_choose"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Icon (Font Awesome class)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+          - label: "8. Portfolio (Add / Remove / Edit)"
+            name: "portfolio"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "URL Label", name: "url_label", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Category Tag", name: "tag", widget: "string" }
+              - { label: "Store Name", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+          - label: "9. Testimonials (Add / Remove / Edit)"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { label: "Rating (1-5)", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
+              - { label: "Review Text", name: "text", widget: "text" }
+              - { label: "Client Name", name: "name", widget: "string" }
+              - { label: "Client Role / Company", name: "role", widget: "string" }
+
+          - label: "10. CTA Banner"
+            name: "cta_banner"
+            widget: "object"
+            fields:
+              - { label: "Heading - Part 1", name: "heading_normal", widget: "string" }
+              - { label: "Heading - Part 2 (gold)", name: "heading_gold", widget: "string" }
+              - { label: "Heading - Part 3", name: "heading_end", widget: "string" }
