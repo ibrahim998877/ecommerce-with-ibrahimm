@@ -17,6 +17,7 @@ collections:
             name: "site"
             widget: "object"
             fields:
+              - { label: "Logo Image (optional, replaces icon)", name: "logo_image", widget: "image", required: false }
               - { label: "Logo Text (Part 1)", name: "logo_text_1", widget: "string" }
               - { label: "Logo Text (Part 2, bold gold)", name: "logo_text_2", widget: "string" }
               - { label: "Logo Tagline", name: "logo_tagline", widget: "string" }
