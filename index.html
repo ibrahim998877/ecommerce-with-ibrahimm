@@ -510,7 +510,7 @@ footer{border-top:1px solid var(--border);padding:80px 0 0;background:var(--bg-a
 <nav class="navbar" id="navbar">
   <div class="container nav-inner">
     <a href="#home" class="logo">
-      <span class="logo-mark">
+      <span class="logo-mark" id="logoMarkNav">
         <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M28 34h6l6 34a6 6 0 0 0 6 5h24a6 6 0 0 0 6-5l5-24H38" stroke="#D4AF37" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="44" cy="80" r="4.5" fill="#D4AF37"/>
@@ -566,11 +566,7 @@ footer{border-top:1px solid var(--border);padding:80px 0 0;background:var(--bg-a
       </div>
       <div class="float-stat glass f1">
         <div class="label"><i class="fa-solid fa-chart-line"></i> Monthly Revenue</div>
-        <div class="value" data-counter data-target="48200" data-prefix="$" id="heroStatRevenue">$0<small>+32%</small></div>
-      </div>
-      <div class="float-stat glass f2">
-        <div class="label"><i class="fa-solid fa-cart-shopping"></i> Conversion Rate</div>
-        <div class="value" data-counter data-target="4.8" data-decimal="1" data-suffix="%" id="heroStatConversion">0%</div>
+        <div class="value" data-counter data-target="48200" data-prefix="AED " id="heroStatRevenue">AED 0<small>+32%</small></div>
       </div>
     </div>
   </div>
@@ -744,7 +740,7 @@ footer{border-top:1px solid var(--border);padding:80px 0 0;background:var(--bg-a
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#home" class="logo">
-          <span class="logo-mark">
+          <span class="logo-mark" id="logoMarkFooter">
             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M28 34h6l6 34a6 6 0 0 0 6 5h24a6 6 0 0 0 6-5l5-24H38" stroke="#D4AF37" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
               <circle cx="44" cy="80" r="4.5" fill="#D4AF37"/>
@@ -826,6 +822,11 @@ async function loadSiteContent(){
     document.getElementById('footerEmailLink').href = 'mailto:' + d.site.email;
     document.getElementById('footerCopyright').textContent = d.site.copyright;
     document.title = d.site.logo_text_1 + ' ' + d.site.logo_text_2 + ' | Premium Shopify Store Design & Ecommerce Marketing Agency';
+    if(d.site.logo_image){
+      const logoImgHTML = `<img src="${d.site.logo_image}" style="width:100%;height:100%;object-fit:contain;border-radius:12px;" alt="Logo">`;
+      document.getElementById('logoMarkNav').innerHTML = logoImgHTML;
+      document.getElementById('logoMarkFooter').innerHTML = logoImgHTML;
+    }
 
     // --- Social links ---
     document.querySelectorAll('[data-social]').forEach(a => {
@@ -844,7 +845,6 @@ async function loadSiteContent(){
     document.getElementById('heroTrustText').textContent = d.hero.trust_text;
     const isMobile = window.innerWidth <= 520; document.getElementById('heroImage').src = isMobile ? (d.hero.hero_image_mobile || d.hero.hero_image_desktop) : d.hero.hero_image_desktop;
     document.getElementById('heroStatRevenue').dataset.target = d.hero.stat_revenue;
-    document.getElementById('heroStatConversion').dataset.target = d.hero.stat_conversion;
 
     // --- About ---
     document.getElementById('aboutHeading').innerHTML = d.about.heading_normal + '<span class="grad-text">' + d.about.heading_gold + '</span>' + d.about.heading_end;
